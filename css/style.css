@@ -1,49 +1,118 @@
-body {
-    font-family: Roboto, sans-serif;
+/* General Styles */
+html, body {
     margin: 0;
     padding: 0;
-    background-color: #cccccc;
-    color: #333;
-    text-align: center;
+    height: 100%;
+    font-family: monospace;
+    background: #3e3c3e url(../images/background.png) no-repeat center fixed;
+    background-size: cover;
+    color: #d6d6d6;
+	font-size: 16px;
+    line-height: 1.5;
 }
 
-header {
-    background-color: #527ca7;
+/* Shell Style */
+p {
+	font-size: 1.5rem;
+}
+.shell {
+    background: #f05442;
     color: white;
-    padding: 20px 0;
+    padding: 2px 6px;
+    border-radius: 4px;
+	font-size: 1.5rem;
+    font-weight: bold;
 }
 
-main {
-    padding: 20px;
+/* Header (Name) */
+h1 {
+    color: #f05442;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
 }
 
-img {
+ img {
+    width: 10rem;
+    height: 10rem;
+    margin-right: 15px;
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    margin-top: 20px;
 }
 
-footer {
-    background-color: #422b2b;
-    color: white;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+/* Lists */
+ul {
+    list-style: square inside;
+    padding-left: 0;
+    margin: 10px 0 20px 0;
 }
 
+li {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Links */
 a {
-    color: #0073e6;
+    color: #42f054;
     text-decoration: none;
+    background: rgba(62, 60, 62, 0.7);
+    padding: 2px 4px;
+    border-radius: 4px;
 }
 
 a:hover {
     text-decoration: underline;
 }
 
-ul {
-    list-style: none;
-    padding: 0;
+/* Main Container */
+main.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100% - 40px);
+    padding: 20px;
+    background: rgba(14, 12, 14, 0.85);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Content Section */
+.content {
+    max-width: 800px;
+    text-align: left;
+}
+
+/* Address */
+address {
+    font-style: normal;
+    margin-top: 20px;
+    font-size: 1.5rem;
+}
+
+/* Footer */
+footer {
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+    text-align: right;
+    color: #969696;
+    font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 860px) {
+    html, body {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    html, body {
+        font-size: 18px;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    li, address {
+        font-size: 1.2rem;
+    }
 }
