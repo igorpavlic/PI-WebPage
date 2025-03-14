@@ -40,7 +40,7 @@ h1 {
 
 /* Lists */
 ul {
-    list-style: square inside;
+    list-style: none;
     padding-left: 0;
     margin: 10px 0 20px 0;
 }
